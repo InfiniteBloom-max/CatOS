@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatOS 9.lives</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="catos">
+        <!-- Desktop -->
+        <div id="desktop">
+            <!-- Desktop Icons -->
+            <div class="desktop-icons">
+                <div class="icon" data-app="food-scanner">
+                    <div class="icon-img">🐟</div>
+                    <span>Food Scanner</span>
+                </div>
+                <div class="icon" data-app="sleep-mode">
+                    <div class="icon-img">🛏️</div>
+                    <span>Sleep Mode</span>
+                </div>
+                <div class="icon" data-app="zoomies">
+                    <div class="icon-img">💥</div>
+                    <span>Zoomies.exe</span>
+                </div>
+                <div class="icon" data-app="yarn-ball">
+                    <div class="icon-img">🧶</div>
+                    <span>Yarn Ball</span>
+                </div>
+                <div class="icon" data-app="box-simulator">
+                    <div class="icon-img">📦</div>
+                    <span>Box Simulator</span>
+                </div>
+                <div class="icon" data-app="human-ignore">
+                    <div class="icon-img">🙄</div>
+                    <span>Ignore Human</span>
+                </div>
+            </div>
+
+            <!-- Windows Container -->
+            <div id="windows-container"></div>
+
+            <!-- Random Cat Cursor -->
+            <div id="cat-cursor">🐾</div>
+        </div>
+
+        <!-- Taskbar -->
+        <div id="taskbar">
+            <div id="start-menu">
+                <span class="start-icon">🐱</span>
+                <span class="start-text">Meow</span>
+            </div>
+            <div id="running-apps"></div>
+            <div id="system-tray">
+                <div id="attention-meter">
+                    <span>Attention:</span>
+                    <div class="meter-bar">
+                        <div id="attention-fill"></div>
+                    </div>
+                </div>
+                <div id="priority-indicator">
+                    <span id="current-priority">🐟 FOOD</span>
+                </div>
+                <div id="clock"></div>
+            </div>
+        </div>
+
+        <!-- System Logs Panel -->
+        <div id="system-logs">
+            <div class="logs-header">
+                <span>📋 System Logs</span>
+                <button id="toggle-logs">−</button>
+            </div>
+            <div id="logs-content"></div>
+        </div>
+
+        <!-- Notification Popup -->
+        <div id="notification" class="hidden">
+            <span id="notification-text"></span>
+        </div>
+
+        <!-- BSOD (Blue Screen of Cat) -->
+        <div id="bsoc" class="hidden">
+            <div class="bsoc-content">
+                <h1>:3</h1>
+                <h2>Your cat ran into a problem and needs to nap.</h2>
+                <p id="bsoc-reason"></p>
+                <div class="bsoc-progress">
+                    <span>Collecting hairballs... <span id="bsoc-percent">0</span>%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="catos.js"></script>
+</body>
+</html>
